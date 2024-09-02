@@ -1,0 +1,358 @@
+ul li{
+    list-style: none;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.cont{
+    position: relative;
+}
+.slide{
+    width: 300px;
+    overflow: hidden;
+    background-color: rgb(50, 50, 126);
+    transition: all .3s;
+}
+
+.title{
+    column-gap: 30px;
+    color: white; 
+}
+.title span{
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+.title i{
+    font-size: 30px;
+}
+.menu{
+    top: 30%;
+    transform: translateY(-30%);
+    width: 100%;
+}
+.menu li{
+    position: relative;
+    width: 100%;
+}
+.menu li a{
+    column-gap: 30px;
+    color: white;
+    font-weight: 600;
+    padding-left: 20px;
+    position: relative;
+}
+
+.menu li:hover,
+.menu li.activeLinkkkk
+{
+    padding-left: -40px;
+    background-color: white;
+    border-bottom-left-radius: 40px;
+    border-top-left-radius: 40px;
+}
+.menu li:hover a,
+.menu li.activeLinkkkk a{
+    color: rgb(61, 61, 114);
+    text-decoration: none;
+
+}
+
+.menu li:hover  a::before,
+.menu li.activeLinkkkk  a::before
+{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -50px;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 35px 42px 0 10px white;
+    pointer-events: none;
+}
+.menu li:hover  a::after,
+.menu li.activeLinkkkk  a::after
+{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 35px -42px 0 10px white;
+    pointer-events: none;
+
+}
+/*********************/
+
+.cont .home{
+    position: absolute;
+    left: 300px;
+    top: 0;
+    width: calc(100% - 300px);
+    transition: all .3s;
+
+}
+
+.img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+.img img{
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.toggle i{
+    font-size: 30px;
+    cursor: pointer;
+}
+.inp{
+    width: 500px;
+    height: 35px;
+    color: black;
+
+}
+.inp input{
+    border-radius: 50px;
+    height: 100%;
+    width: 100%;
+    border: solid 1px black;
+    outline: none;
+
+}
+.inp i{
+    left: 15px;
+    top: 60%;
+    transform: translateY(-60%);
+}
+.inp input::placeholder{
+    color: black;
+
+    font-weight: 600;
+}
+
+/************/
+.slide.show{
+    width: 60px;
+    z-index: 99;
+}
+.home.show{
+    width: calc(100% - 60px);
+    left: 60px;
+}
+
+.cardd{
+    background-color: white;
+    box-shadow:  5px 5px 10px gray;
+    border-radius: 10px;
+    transition: all .3s;
+    width: 95%;
+}
+
+.card-info span{
+    font-size: 30px;
+    font-weight: 700;
+    color:  rgb(50, 50, 126);
+}
+.card-info p{
+    color: rgba(128, 128, 128, 0.741);
+}
+.icon i{  
+    font-size: 30px;
+    color: gray;
+}
+
+.cardd:hover{
+    background-color:  rgb(50, 50, 126);
+}
+.cardd:hover span ,
+.cardd:hover i
+{
+    color: white;
+}
+.table1 , .table2{
+    background-color: white;
+    box-shadow:  5px 5px 10px gray;
+    border-radius: 10px;
+}
+
+.title1 h2 ,
+.title2 h2{
+    font-size: 30px;
+    color:  rgb(50, 50, 126);
+}
+.title1 a{
+    display: inline-block;
+    white-space: nowrap;
+    padding: 3px 15px;
+    background-color:  rgb(50, 50, 126);
+    border-radius: 6px;
+    color: white;
+}
+.title1 a:hover{
+    text-decoration: none;
+    color: white;
+
+}
+.tables table{
+    width: 100%;
+    height: 390px;
+}
+
+.table1 thead{
+    font-weight: 700;
+}
+
+.table1 tbody tr{
+    border-bottom: solid 1px gray;
+}
+.table1 tbody  tr:hover{
+    background-color:  rgb(50, 50, 126);
+}
+.table1  tr td{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.table1 tbody tr.last{
+    border: 0;
+}
+
+
+.table2{
+    width: 94%;
+}
+
+.table2 h4{
+    font-size: 18px;
+}
+.table2 span{
+    color: rgba(128, 128, 128, 0.741);
+}
+.table2  tr td{
+    padding-left: 10px;
+}
+.table2  tr:hover{
+    background-color:  rgb(50, 50, 126);
+}
+
+
+.image img{
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+
+.Deliverred{
+    padding: 0px 3px;
+    border-radius: 3px;
+    background-color: green;
+    color: white;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+.Pending{
+    padding: 0px 3px;
+    border-radius: 3px;
+    background-color: rgb(221, 221, 59);
+    color: white;
+    letter-spacing: 1px;
+    white-space: nowrap;
+
+}
+.Return{
+    padding: 0px 3px;
+    border-radius: 3px;
+    background-color: red;
+    color: white;
+    letter-spacing: 1px;
+    white-space: nowrap;
+
+}
+.Progress{
+    padding: 0px 3px;
+    border-radius: 3px;
+    background-color: rgb(64, 64, 157);
+    color: white;
+    letter-spacing: 1px;
+    white-space: nowrap;
+
+}
+
+
+@media screen and (max-width:1200px) {
+    .cardd{
+        margin-bottom: 15px;
+        width: 90%;
+    }
+    .table1{
+        margin-bottom: 20px;
+    }
+    .table2{
+        width: 100%;
+    }
+    .inp{
+        width: 290px;
+    }
+    
+    
+  
+}
+@media screen and (max-width:767px) {
+    .cardd{
+        width: 100%;
+    }
+    .table1{
+        overflow-x: scroll;
+    }
+    .slide{
+        left: -300px;
+    }
+    .slide.show{
+        width: 100%;
+        left: 0;
+    }
+    .cont .home{
+        width: 100%;
+        left: 0;
+    }
+    
+    .toggle{
+        z-index: 1000;
+    }
+    .home.show .toggle{
+        color: white;
+        position: fixed;
+        right: 20px;
+        top: 20px;
+    }
+    .top .img{
+        display: none;
+     }
+     .inp{
+        width: 250px;
+    }
+    
+}
+
+
+
+
+
+
+
+   
+    
